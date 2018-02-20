@@ -19,7 +19,13 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    @IBAction func createAlert(_ sender: Any) {
+        AlertViewController.createConfirmAlert(view: self, alertTitle: "Example Title", alertMessage: "Example Message",buttonTitle: "OK")
+    }
+    @IBAction func createConfirmAlert(_ sender: Any) {
+        AlertViewController.createConfirmAlert(view: self, alertTitle: "Example Title", alertMessage: "Example Message",buttonTitle: "OK",button2Title: "NO")
+    }
+    
 }
 
