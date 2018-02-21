@@ -25,7 +25,7 @@ class ViewController: UIViewController,UINavigationControllerDelegate, UIImagePi
     @IBAction func btnImportImage(_ sender: Any) {
         let imagePickerController = UIImagePickerController()
         imagePickerController.delegate = self
-        imagePickerController.sourceType = UIImagePickerControllerSourceType.photoLibrary
+        imagePickerController.sourceType = UIImagePickerControllerSourceType.camera
         imagePickerController.allowsEditing = false
         self.present(imagePickerController, animated: true, completion: nil)
     }
