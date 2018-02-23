@@ -11,6 +11,8 @@ import UIKit
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     let cellContent = ["Mahmut","Eda","Ada","Tevabil","Sevgi","Kaan","Hakan"]
+    //if cellContent change, use to reload --> table.reloadData()
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return cellContent.count
     }
