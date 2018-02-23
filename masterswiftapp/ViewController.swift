@@ -13,6 +13,14 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+       
+        //UserDefaults.standard.set("Mahmut", forKey: "king")
+        let nameObject = UserDefaults.standard.object(forKey: "king")
+        if let name = nameObject as? String
+        {
+             print(name)
+        }
+       
     }
 
     override func didReceiveMemoryWarning() {
