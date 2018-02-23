@@ -19,7 +19,11 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    @IBOutlet weak var slider: UISlider!
+    
+    @IBAction func sliderValueChanged(_ sender: Any) {
+        print(slider.value)
+    }
+    
 }
 
