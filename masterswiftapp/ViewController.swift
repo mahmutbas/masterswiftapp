@@ -9,17 +9,37 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var webview: UIWebView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        // we can load to webview ourselves html codes
+        //webview.loadHTMLString("<h3>Hello Mahmut</h3>", baseURL: nil)
+        
+        if let url = URL(string: "https://www.stackoverflow.com") {
+            let request = NSMutableURLRequest(url: url)
+            let task = URLSession.shared.dataTask(with: request as URLRequest){
+                data, response,error in
+                if error != nil {
+                    print(error as Any)
+                }else {
+                    if let unwrappedData = data {
+                        let dataString = NSString(data: unwrappedData, encoding: String.Encoding.utf8.rawValue)
+                        print(dataString as Any)
+                    }
+                }
+            }
+            task.resume()
+        }
+        
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    
 }
 
