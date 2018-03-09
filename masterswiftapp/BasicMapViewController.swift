@@ -25,6 +25,13 @@ class BasicMapViewController: UIViewController, MKMapViewDelegate {
         let region: MKCoordinateRegion = MKCoordinateRegion(center: location, span: span)
         
         mapkit.setRegion(region, animated: true)
+        
+        let annotation = MKPointAnnotation()
+        annotation.title = "Istanbulun Merkezi"
+        annotation.subtitle = "Tarihi yarim ada"
+        annotation.coordinate = location
+        
+        mapkit.addAnnotation(annotation)
     }
 
     override func didReceiveMemoryWarning() {
