@@ -32,6 +32,20 @@ class BasicMapViewController: UIViewController, MKMapViewDelegate {
         annotation.coordinate = location
         
         mapkit.addAnnotation(annotation)
+        
+        let addNewPoint = UILongPressGestureRecognizer(target: self, action: #selector(BasicMapViewController.longpress(gestureRecognizer:)))
+        addNewPoint.minimumPressDuration = 2
+        mapkit.addGestureRecognizer(addNewPoint)
+    }
+    
+    @objc func longpress(gestureRecognizer:UIGestureRecognizer){
+        let touchPoint = gestureRecognizer.location(in: self.mapkit)
+        let coordinate = mapkit.convert(touchPoint, toCoordinateFrom: self.mapkit)
+        let annotation = MKPointAnnotation()
+        annotation.coordinate = coordinate
+        annotation.title = "New Title"
+        annotation.subtitle = "This is my new point"
+        mapkit.addAnnotation(annotation)
     }
 
     override func didReceiveMemoryWarning() {
