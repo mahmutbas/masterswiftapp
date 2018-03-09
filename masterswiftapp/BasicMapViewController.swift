@@ -14,8 +14,17 @@ class BasicMapViewController: UIViewController, MKMapViewDelegate {
     @IBOutlet weak var mapkit: MKMapView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        //41.012117, 28.983250
+        let latitude: CLLocationDegrees = 41.012117
+        let longitude: CLLocationDegrees = 28.983250
+        let latDelta: CLLocationDegrees = 0.01 //zoom range
+        let lonDelta: CLLocationDegrees = 0.01
+        
+        let span:MKCoordinateSpan = MKCoordinateSpan(latitudeDelta: latDelta, longitudeDelta: lonDelta)
+        let location: CLLocationCoordinate2D = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
+        let region: MKCoordinateRegion = MKCoordinateRegion(center: location, span: span)
+        
+        mapkit.setRegion(region, animated: true)
     }
 
     override func didReceiveMemoryWarning() {
