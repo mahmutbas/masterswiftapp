@@ -13,6 +13,8 @@
 		7103DF82203C164B005D7860 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7103DF81203C164B005D7860 /* Assets.xcassets */; };
 		7103DF85203C164B005D7860 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7103DF83203C164B005D7860 /* LaunchScreen.storyboard */; };
 		7103DF9420527E1B005D7860 /* BasicMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7103DF9320527E1B005D7860 /* BasicMapViewController.swift */; };
+		7103DF9620531C5A005D7860 /* FindLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7103DF9520531C5A005D7860 /* FindLocationViewController.swift */; };
+		7103DF9920531C9F005D7860 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7103DF9820531C9F005D7860 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		7103DF84203C164B005D7860 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7103DF86203C164B005D7860 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7103DF9320527E1B005D7860 /* BasicMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicMapViewController.swift; sourceTree = "<group>"; };
+		7103DF9520531C5A005D7860 /* FindLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindLocationViewController.swift; sourceTree = "<group>"; };
+		7103DF9820531C9F005D7860 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7103DF9920531C9F005D7860 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,7 @@
 			children = (
 				7103DF79203C164B005D7860 /* masterswiftapp */,
 				7103DF78203C164B005D7860 /* Products */,
+				7103DF9720531C9F005D7860 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +69,17 @@
 				7103DF83203C164B005D7860 /* LaunchScreen.storyboard */,
 				7103DF86203C164B005D7860 /* Info.plist */,
 				7103DF9320527E1B005D7860 /* BasicMapViewController.swift */,
+				7103DF9520531C5A005D7860 /* FindLocationViewController.swift */,
 			);
 			path = masterswiftapp;
+			sourceTree = "<group>";
+		};
+		7103DF9720531C9F005D7860 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7103DF9820531C9F005D7860 /* CoreLocation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +154,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7103DF9620531C5A005D7860 /* FindLocationViewController.swift in Sources */,
 				7103DF9420527E1B005D7860 /* BasicMapViewController.swift in Sources */,
 				7103DF7D203C164B005D7860 /* ViewController.swift in Sources */,
 				7103DF7B203C164B005D7860 /* AppDelegate.swift in Sources */,
