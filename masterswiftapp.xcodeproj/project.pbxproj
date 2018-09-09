@@ -12,6 +12,13 @@
 		7103DF80203C164B005D7860 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7103DF7E203C164B005D7860 /* Main.storyboard */; };
 		7103DF82203C164B005D7860 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7103DF81203C164B005D7860 /* Assets.xcassets */; };
 		7103DF85203C164B005D7860 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7103DF83203C164B005D7860 /* LaunchScreen.storyboard */; };
+		BF88136835667FB8BACD2AA8 /* note5.wav in Resources */ = {isa = PBXBuildFile; fileRef = BF881FA1341BF6246305D987 /* note5.wav */; };
+		BF8814AFF28385790C6C32A9 /* note4.wav in Resources */ = {isa = PBXBuildFile; fileRef = BF881ADA8174A7E3958DE0F0 /* note4.wav */; };
+		BF881592D224BC1AF3A5A87A /* note2.wav in Resources */ = {isa = PBXBuildFile; fileRef = BF881532005BEE00EA8C4472 /* note2.wav */; };
+		BF88181E21CDA29FE0DAD498 /* note1.wav in Resources */ = {isa = PBXBuildFile; fileRef = BF8817F7A68290C9A5719445 /* note1.wav */; };
+		BF881EAF7473E72B89F9D469 /* note6.wav in Resources */ = {isa = PBXBuildFile; fileRef = BF88149571600A2AB103E7B6 /* note6.wav */; };
+		BF881F7AC540076CCA14845F /* note3.wav in Resources */ = {isa = PBXBuildFile; fileRef = BF8812C538ED6239AC3FFC26 /* note3.wav */; };
+		BF881FD5A4CF2BC366EE631E /* note7.wav in Resources */ = {isa = PBXBuildFile; fileRef = BF8814D70E2F802464383A71 /* note7.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +29,13 @@
 		7103DF81203C164B005D7860 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7103DF84203C164B005D7860 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7103DF86203C164B005D7860 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF8812C538ED6239AC3FFC26 /* note3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = note3.wav; sourceTree = "<group>"; };
+		BF88149571600A2AB103E7B6 /* note6.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = note6.wav; sourceTree = "<group>"; };
+		BF8814D70E2F802464383A71 /* note7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = note7.wav; sourceTree = "<group>"; };
+		BF881532005BEE00EA8C4472 /* note2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = note2.wav; sourceTree = "<group>"; };
+		BF8817F7A68290C9A5719445 /* note1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = note1.wav; sourceTree = "<group>"; };
+		BF881ADA8174A7E3958DE0F0 /* note4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = note4.wav; sourceTree = "<group>"; };
+		BF881FA1341BF6246305D987 /* note5.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = note5.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +74,23 @@
 				7103DF81203C164B005D7860 /* Assets.xcassets */,
 				7103DF83203C164B005D7860 /* LaunchScreen.storyboard */,
 				7103DF86203C164B005D7860 /* Info.plist */,
+				BF8810EBCA980871054E2133 /* Sound Files */,
 			);
 			path = masterswiftapp;
+			sourceTree = "<group>";
+		};
+		BF8810EBCA980871054E2133 /* Sound Files */ = {
+			isa = PBXGroup;
+			children = (
+				BF88149571600A2AB103E7B6 /* note6.wav */,
+				BF8817F7A68290C9A5719445 /* note1.wav */,
+				BF881FA1341BF6246305D987 /* note5.wav */,
+				BF8814D70E2F802464383A71 /* note7.wav */,
+				BF881532005BEE00EA8C4472 /* note2.wav */,
+				BF8812C538ED6239AC3FFC26 /* note3.wav */,
+				BF881ADA8174A7E3958DE0F0 /* note4.wav */,
+			);
+			path = "Sound Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +155,13 @@
 				7103DF85203C164B005D7860 /* LaunchScreen.storyboard in Resources */,
 				7103DF82203C164B005D7860 /* Assets.xcassets in Resources */,
 				7103DF80203C164B005D7860 /* Main.storyboard in Resources */,
+				BF881EAF7473E72B89F9D469 /* note6.wav in Resources */,
+				BF88181E21CDA29FE0DAD498 /* note1.wav in Resources */,
+				BF88136835667FB8BACD2AA8 /* note5.wav in Resources */,
+				BF881FD5A4CF2BC366EE631E /* note7.wav in Resources */,
+				BF881592D224BC1AF3A5A87A /* note2.wav in Resources */,
+				BF881F7AC540076CCA14845F /* note3.wav in Resources */,
+				BF8814AFF28385790C6C32A9 /* note4.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
